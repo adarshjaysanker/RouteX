@@ -1,0 +1,211 @@
+.services-section{
+   position: relative;
+   min-height: 90vh;
+   display: flex;
+   flex-direction: column;
+}
+
+.services-content{
+    flex: 1;
+    padding: 4rem;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+.services-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    background-image: url('http://www.linney.com/media/vigf4oq2/travel-destinations.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.services-image::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1.5)0%, rgba(255, 255, 255, 0) 100%);
+    height: 500px;
+}
+
+.services-heading{
+    margin-bottom: 2.5rem;
+    margin-left: 5%;
+    max-width: 600px;
+}
+
+.services-heading h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(7, 59, 51);
+}
+
+.services-heading h1{
+    font-size: 3rem;
+    color: rgb(7, 59, 51);
+}
+
+.services-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 4rem;
+    right: 4rem;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.service-card{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(119, 191, 5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.service-icon .icon {
+    color: white;
+    font-size: 32px;
+}
+
+.service-card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.service-card p {
+    color: #666;
+    max-width: 200px;
+    font-size: 0.9rem;
+}
+
+.arrow-buttons{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-right: 200px;
+    margin-top: 150px;
+}
+
+.arrow-button{
+    background-color: transparent;
+    border: 2px solid rgb(7, 59 ,51);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.arrow-button:hover{
+    background-color: rgb(7, 59, 51);
+    border-color: rgb(7, 59 ,51);
+}
+
+.arrow-icon{
+    font-size: 24px;
+    color: rgb(7, 59, 51);
+}
+
+@media (max-width: 1200px) {
+    .services-image {
+        width: 30%;
+    }
+    .services-cards {
+        left: 2rem;
+        right: 2rem;
+    }
+    .arrow-buttons {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-image {
+        display: none;
+    }
+    .services-content {
+        padding: 3rem;
+    }
+    .services-cards {
+        position: static;
+        margin-top: 2rem;
+    }
+    .arrow-buttons {
+        position: static;
+        justify-content: center;
+        margin: 2rem 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-heading h1 {
+        font-size: 2.5rem;
+    }
+    .service-card {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-content {
+        padding: 2rem;
+    }
+    .services-heading {
+        margin-left: 0;
+    }
+    .services-heading h1 {
+        font-size: 2rem;
+    }
+    .services-cards {
+        left: 1rem;
+        right: 1rem;
+    }
+    .service-card {
+        padding: 1.5rem;
+    }
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .service-icon .icon {
+        font-size: 24px;
+    }
+    .arrow-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}

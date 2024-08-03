@@ -1,0 +1,203 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo{
+    width: 3vw;
+    height: auto;
+    max-width: 50px;
+}
+
+.company-name-header{
+    font-size: 2rem;
+    font-family: "Roboto",sans-serif;
+    font-weight: 900;
+    color: rgb(7, 59, 51);
+    margin-left: 10px;
+}
+
+.nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-item{
+    margin: 0 0.5vw;
+    position: relative;
+    color: rgb(7, 59, 51);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.help-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.help-text-container{
+    display: flex;
+    align-items: center;
+}
+
+.message-icon{
+    font-size: 3rem;
+    color: rgb(7, 59, 51);
+    margin-right: 0.5rem;
+}
+
+.help-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-number{
+    font-size: 0.9rem;
+    color: rgb(7, 59, 51);
+    font-weight: 500;
+}
+
+.hamburger-menu{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    left: 0;
+  }
+  
+  .close-icon {
+    align-self: flex-end;
+    margin: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .sidebar-item {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: rgb(7, 59, 51);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+
+@media(max-width: 1024px){
+    .header{
+        padding: 1rem;
+    }
+    .nav-item{
+        margin: 0.5rem 0;
+    }
+    .logo{
+        width: 50px;
+    }
+    .company-name-header{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:992px){
+    .nav{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .company-name-header{
+        font-size: 1.5rem;
+    }
+    .message-icon{
+        font-size: 2rem;
+    }
+    .help-section{
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width: 768px){
+    .nav{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .company-name-header{
+        font-size: 1.5rem;
+    }
+    .message-icon{
+        font-size: 2rem;
+    }
+    .help-section{
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width: 480px){
+    .company-name-header{
+        font-size: 1.2rem;
+    }
+    .message-icon{
+        font-size: 1.5rem;
+    }
+    .contact-number{
+        font-size: 0.8rem;
+    }
+}

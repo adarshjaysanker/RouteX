@@ -1,0 +1,255 @@
+.about-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-top: 90px;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    margin-left: 25px;
+}
+
+.images-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex-basis: 50%;
+    margin-left: -150px;
+    max-width: 60%;
+}
+
+.image-group{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-1{
+    width: 290px;
+    height: 310px;
+    margin-bottom: 220px;
+}
+
+.photo-2{
+    width: 290px;
+    height: 280px;
+    position: absolute;
+    top: 47%;
+    right: -70%;
+}
+
+.photo-3{
+    width: 250px;
+    height: 190px;
+    position: absolute;
+    top: 8%;
+    right: -57px;
+}
+
+.experience-card{
+    position: absolute;
+    left: 35px;
+    bottom: 3px;
+    background-color: rgb(119, 191, 5);;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.experience-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-number{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experience-label{
+    font-size: 1rem;
+}
+
+.about-content{
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 3rem;
+}
+
+.about-content h2{
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: rgb(7, 59, 51);
+}
+
+.about-content h1{
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1.5rem;
+    color: rgb(7, 59, 51);
+    white-space: pre-wrap;
+}
+
+.desc{
+    margin-bottom: 1.5rem;
+    max-width: 30px;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+}
+
+.feature-item{
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    max-width: 230px;
+}
+
+.feature-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.feature-item input.checkbox{
+    margin-right: 0.5rem;
+    accent-color: rgb(119,191,5);
+}
+
+.feature-item label{
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: rgb(7, 59, 51);
+}
+
+.feature-item p .feature-description{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    white-space: pre-wrap;
+}
+
+.read-more-button{
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(119, 191, 5);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media(max-width: 1200px){
+    .about-us{
+        margin-left: 0;
+    }
+    .images-container {
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .photo-2 {
+        right: -50%;
+    }
+    .photo-3 {
+        right: -30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .images-container {
+        margin-bottom: 2rem;
+    }
+    .image-group {
+        width: 100%;
+    }
+    .photo-1, .photo-2, .photo-3 {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .experience-card {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .about-content h1 {
+        font-size: 2.5rem;
+    }
+    .about-content p{
+        max-width: 150px;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .feature-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .images-container {
+        margin-bottom: 2rem;
+    }
+    .image-group {
+        width: 100%;
+    }
+    .photo-1, .photo-2, .photo-3 {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .experience-card {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .about-content h1 {
+        font-size: 2.5rem;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .feature-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-us {
+        padding: 1rem;
+    }
+    .about-content h1 {
+        font-size: 2rem;
+    }
+    .experience-number {
+        font-size: 2.5rem;
+    }
+    .read-more-button {
+        width: 100%;
+    }
+}

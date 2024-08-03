@@ -1,0 +1,268 @@
+.footer{
+    background-color: rgb(7, 59, 51);
+    color: white;
+    padding: 2rem 1rem;
+    min-height: 600px;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.company-info{
+    position: relative;
+    flex: 1;
+    min-width: 250px;
+    margin-right: 7rem;
+    margin-left: 100px;
+}
+
+.background-image{
+    position: relative;
+}
+
+.background{
+    width: 100%;
+    height: auto;
+    position: relative;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.background::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(7, 59, 51, 0.7);
+    z-index: 1;
+}
+
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.company-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-left: 20px;
+    z-index: 3;
+}
+
+.company-name{
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+    margin-right: 1rem;
+    z-index: 3;
+}
+
+.company-logo{
+    width: 50px;
+    height: auto;
+    z-index: 3;
+}
+
+.company-description{
+    margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    z-index: 3;
+}
+
+.social-media{
+    display: flex;
+    gap: 1rem;
+}
+
+.service-menu, .useful-links{
+    flex: 1;
+    min-width: 200px;
+    margin: 0 1rem;
+}
+
+.gallery{
+    flex: 1;
+    margin-top: 90px;
+}
+
+.service-menu h3, .useful-links h3{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.service-menu ul, .useful-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .service-menu li, .useful-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .gallery h3{
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .service-menu li svg, .useful-links li svg {
+    margin-right: 0.5rem;
+  }
+
+  .gallery{
+    margin-left: -150px;
+  }
+
+
+  .useful-links{
+    margin-left: -90px;
+  }
+  
+  .gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .gallery-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  hr {
+    margin: 2rem 0;
+    margin-top: 120px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ddd;
+  }
+
+  .check{
+    color: greenyellow;
+  }
+  
+
+  @media screen and (max-width: 1200px) {
+    .company-info {
+      margin-right: 3rem;
+      margin-left: 50px;
+    }
+  
+    .gallery {
+      margin-left: -100px;
+    }
+  
+    .useful-links {
+      margin-left: -60px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .company-info {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .service-menu,
+    .useful-links,
+    .gallery {
+      margin-left: 0;
+      margin-top: 2rem;
+      width: 100%;
+    }
+  
+    .gallery-images {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding: 2rem 0.5rem;
+    }
+  
+    .company-name {
+      font-size: 2rem;
+    }
+  
+    .company-logo {
+      width: 40px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-links {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .company-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .company-name {
+      margin-bottom: 0.5rem;
+    }
+  
+    .gallery-images img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
